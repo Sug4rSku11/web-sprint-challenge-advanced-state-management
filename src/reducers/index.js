@@ -10,35 +10,25 @@ const reducer = (state = initialState, action)=>{
         case(FETCH_START):
         return({
             ...state,
-            smurfs: {},
-            isFetching: true,
-            error: ''
+            isFetching: true
         });
         case(FETCH_SUCCESS):
         return({
             ...state,
             smurfs: action.payload,
             isFetching: false,
-            error: ''
         });
         case(FETCH_ERROR):
         return({
             ...state,
-            smurfs: {},
             isFetching: false,
-            error: ''
+            error: action.payload
         });
         case(ADD_SMURF):
         return({
             ...state,
             smurfs: [...state.smurfs,
-            {
-                id: Date.now(),
-                name: action.payload.name,
-                position: action.payload.position,
-                nickname: action.payload.nickname,
-                description: action.payload.description
-            }],
+                        action.payload]
         });
         case(SET_ERROR):
         return({

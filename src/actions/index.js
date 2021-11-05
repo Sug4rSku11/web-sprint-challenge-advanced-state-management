@@ -32,8 +32,8 @@ export const fetchError = (error) => {
 
 export const ADD_SMURF = "ADD_SMURF";
 
-export const addSmurf = (name) => {
-    return({type: ADD_SMURF, payload: name});
+export const addSmurf = (smurf) => {
+    return({type: ADD_SMURF, payload: smurf});
 }
 
 export const SET_ERROR = "SET_ERROR";

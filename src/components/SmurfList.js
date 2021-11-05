@@ -1,9 +1,9 @@
 import React from 'react';
 import Smurf from './Smurf';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
  const SmurfList = (props) => {
-     const {smurfs, isLoading} = props;
+     const { smurfs, isLoading } = props;
    
     // const isLoading = false;
     // const testSmurf = {

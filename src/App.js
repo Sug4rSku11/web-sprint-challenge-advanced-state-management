@@ -31,7 +31,7 @@ class App extends Component {
         <Header />
 
         <main>
-          <SmurfList/>
+          <SmurfList />
           <AddForm/>
         </main>
       </div>
